@@ -57,7 +57,7 @@ extension ViewController: UITableViewDelegate {
             self?.delete(viewModel)
         }
         
-        let cancelAction = UIAlertAction(title: "dgdfgdr", style: .cancel, handler: nil)
+        let cancelAction = UIAlertAction(title: "Cancel", style: .cancel, handler: nil)
         
         actionSheetController.addAction(modalAction)
         actionSheetController.addAction(pushAction)
@@ -68,10 +68,24 @@ extension ViewController: UITableViewDelegate {
     }
     
     private func presentModal(_ viewModel: DetailViewModel) {
+        let modalVC = storyboard?.instantiateViewController(withIdentifier: "modal") as! ModalViewController
+        
+        self.definesPresentationContext = true
+        modalVC.modalPresentationStyle = .overCurrentContext
+        
+        modalVC.viewModel = viewModel
+        
+        navigationController?.present(modalVC, animated: true, completion: nil)
+        
         
     }
     
     private func pushView(_ viewModel: DetailViewModel) {
+        let pushedVC = storyboard?.instantiateViewController(withIdentifier: "pushed") as! PushedViewController
+        
+        pushedVC.viewModel = viewModel
+        
+        navigationController?.pushViewController(pushedVC, animated: true)
         
     }
     
