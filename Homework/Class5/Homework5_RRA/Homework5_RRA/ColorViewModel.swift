@@ -7,3 +7,12 @@
 //
 
 import Foundation
+import UIKit
+
+struct ColorViewModel {
+
+      let name: String
+      let color: UIColor
+      let isSelected: Bool
+    
+}
