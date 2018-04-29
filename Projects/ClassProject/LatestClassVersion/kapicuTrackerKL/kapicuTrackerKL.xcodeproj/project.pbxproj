@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6A48814E20928CCD004F7CD8 /* PlayerNameEntryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A48814D20928CCD004F7CD8 /* PlayerNameEntryViewController.swift */; };
+		6A48815120929BBE004F7CD8 /* GameModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A48815020929BBE004F7CD8 /* GameModel.swift */; };
 		C00AEA5A2076EE850007F098 /* UIViewControllerExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C00AEA592076EE850007F098 /* UIViewControllerExtensions.swift */; };
 		C00AEA602076F1110007F098 /* ButtonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = C00AEA5F2076F1110007F098 /* ButtonStyle.swift */; };
 		C0CF4807206B11B900131955 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0CF4806206B11B900131955 /* AppDelegate.swift */; };
@@ -19,6 +21,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		6A48814D20928CCD004F7CD8 /* PlayerNameEntryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerNameEntryViewController.swift; sourceTree = "<group>"; };
+		6A48815020929BBE004F7CD8 /* GameModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameModel.swift; sourceTree = "<group>"; };
 		C00AEA592076EE850007F098 /* UIViewControllerExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewControllerExtensions.swift; sourceTree = "<group>"; };
 		C00AEA5F2076F1110007F098 /* ButtonStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonStyle.swift; sourceTree = "<group>"; };
 		C0CF4803206B11B900131955 /* kapicuTrackerKL.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = kapicuTrackerKL.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -43,11 +47,20 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6A48814F20929B81004F7CD8 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				6A48815020929BBE004F7CD8 /* GameModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 		C00AEA5B2076F01D0007F098 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
 				C0CF4818206B19AB00131955 /* HomeViewController.swift */,
 				C0DF1CE4207451CD005FCD3D /* NumberOfPlayersViewController.swift */,
+				6A48814D20928CCD004F7CD8 /* PlayerNameEntryViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -97,6 +110,7 @@
 		C0CF4805206B11B900131955 /* kapicuTrackerKL */ = {
 			isa = PBXGroup;
 			children = (
+				6A48814F20929B81004F7CD8 /* Models */,
 				C00AEA5E2076F0FE0007F098 /* Styles */,
 				C0CF4806206B11B900131955 /* AppDelegate.swift */,
 				C00AEA5C2076F0AF0007F098 /* Extensions */,
@@ -181,9 +195,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				C0DF1CE3207447A7005FCD3D /* UIColorExtensions.swift in Sources */,
+				6A48814E20928CCD004F7CD8 /* PlayerNameEntryViewController.swift in Sources */,
 				C0CF4807206B11B900131955 /* AppDelegate.swift in Sources */,
 				C00AEA5A2076EE850007F098 /* UIViewControllerExtensions.swift in Sources */,
 				C00AEA602076F1110007F098 /* ButtonStyle.swift in Sources */,
+				6A48815120929BBE004F7CD8 /* GameModel.swift in Sources */,
 				C0CF4819206B19AB00131955 /* HomeViewController.swift in Sources */,
 				C0DF1CE5207451CD005FCD3D /* NumberOfPlayersViewController.swift in Sources */,
 			);

@@ -8,22 +8,22 @@
 
 import UIKit
 
-enum NumberOfPlayers: Int {
-    case two = 2
-    case three = 3
-    case four = 4
-    
-    var txt: String {
-        switch self {
-        case .two:
-            return "Two"
-        case .three:
-            return "Three"
-        case .four:
-            return "Four"
-        }
-    }
-}
+//enum NumberOfPlayers: Int {
+//    case two = 2
+//    case three = 3
+//    case four = 4
+//
+//    var txt: String {
+//        switch self {
+//        case .two:
+//            return "Two"
+//        case .three:
+//            return "Three"
+//        case .four:
+//            return "Four"
+//        }
+//    }
+//}
 
 class NumberOfPlayersViewController: UIViewController {
     
@@ -43,5 +43,19 @@ class NumberOfPlayersViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         title = "Number Of Players"
+        //to be set in next View
+        configureBackBarButton()
+        configureNextBarButton()
     }
+    
+    @IBAction func playerButtonPressed(_ sender: UIButton) {
+        var gameModel = GameModel()
+        gameModel.numberOftPlayer = NumberOfPlayers(rawValue: sender.tag) ?? .two
+        
+        let storyboard = UIStoryboard.init(name: "Main", bundle: nil)
+        //TODO
+        let playerNameVC = storyboard.instantiateViewController(withIdentifier: "playerName") as! PlayerNameEntryViewController
+        navigationController?.pushViewController(playerNameVC, animated: true)
+    }
+    
 }

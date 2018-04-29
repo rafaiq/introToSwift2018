@@ -15,4 +15,8 @@ extension UIViewController {
         navigationItem.backBarButtonItem?.tintColor = .black
     }
     
+    func configureNextBarButton() {
+        navigationItem.rightBarButtonItem?.tintColor = .gray
+    }
+    
 }

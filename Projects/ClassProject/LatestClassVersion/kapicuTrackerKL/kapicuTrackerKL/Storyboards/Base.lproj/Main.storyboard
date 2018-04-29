@@ -78,6 +78,9 @@
                                         </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <state key="normal" title="Two"/>
+                                        <connections>
+                                            <action selector="playerButtonPressed:" destination="bXj-4k-96J" eventType="touchUpInside" id="Ivw-h0-MON"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vLe-1s-l6s">
                                         <rect key="frame" x="0.0" y="62" width="187.5" height="42"/>
@@ -87,6 +90,9 @@
                                         </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <state key="normal" title="Three"/>
+                                        <connections>
+                                            <action selector="playerButtonPressed:" destination="bXj-4k-96J" eventType="touchUpInside" id="GvD-AZ-c4O"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OH1-Ll-7lB">
                                         <rect key="frame" x="0.0" y="124" width="187.5" height="42"/>
@@ -96,6 +102,9 @@
                                         </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <state key="normal" title="Four"/>
+                                        <connections>
+                                            <action selector="playerButtonPressed:" destination="bXj-4k-96J" eventType="touchUpInside" id="hTL-pj-B3m"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
@@ -117,6 +126,37 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4b1-ng-0q9" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2214" y="116"/>
+        </scene>
+        <!--Player Name Entry View Controller-->
+        <scene sceneID="faB-ON-0jh">
+            <objects>
+                <viewController storyboardIdentifier="playerName" id="Hil-Mt-fgt" customClass="PlayerNameEntryViewController" customModule="kapicuTrackerKL" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="SJW-WZ-F9v">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Name of Player" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="tPM-pV-nnq">
+                                <rect key="frame" x="20" y="120" width="335" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Zhn-AQ-JHD" firstAttribute="trailing" secondItem="tPM-pV-nnq" secondAttribute="trailing" constant="20" id="g0w-uP-Zdf"/>
+                            <constraint firstItem="tPM-pV-nnq" firstAttribute="leading" secondItem="Zhn-AQ-JHD" secondAttribute="leading" constant="20" id="n1K-sD-ays"/>
+                            <constraint firstItem="tPM-pV-nnq" firstAttribute="top" secondItem="Zhn-AQ-JHD" secondAttribute="top" constant="100" id="x52-ci-FpK"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Zhn-AQ-JHD"/>
+                    </view>
+                    <connections>
+                        <outlet property="nameTextField" destination="tPM-pV-nnq" id="K42-9d-9EX"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ZBK-JE-GkF" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2966" y="119"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="tLz-QK-IYp">
