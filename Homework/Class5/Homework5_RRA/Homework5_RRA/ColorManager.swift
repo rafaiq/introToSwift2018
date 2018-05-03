@@ -26,12 +26,17 @@ struct ColorManager {
         var redColors: [ColorViewModel] = []
         
         for randomRedValue in randomRedValues {
-            if true {
-                
-            }
+            
+            let color = UIColor.init(red: (randomRedValue/ColorManager.maxRGBFloatValue), green: 0.0, blue: 0.0, alpha: 1)
+            let colorName = String(format: "R: %.0f, G: %.0f, B: %.0f, A: %.0f", (randomRedValue/ColorManager.maxRGBFloatValue), 0, 0, 1)
+            
+            let colorViewModel = ColorViewModel.init(name: colorName, color: color, isSelected: false)
+            
+            redColors.append(colorViewModel)
+            
         }
         
-        return []
+        return redColors
     }
     
 }
