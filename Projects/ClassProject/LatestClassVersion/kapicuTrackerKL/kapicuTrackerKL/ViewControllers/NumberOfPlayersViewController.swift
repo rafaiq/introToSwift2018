@@ -8,6 +8,7 @@
 
 import UIKit
 
+<<<<<<< HEAD
 //enum NumberOfPlayers: Int {
 //    case two = 2
 //    case three = 3
@@ -25,12 +26,12 @@ import UIKit
 //    }
 //}
 
+=======
+>>>>>>> upstream/master
 class NumberOfPlayersViewController: UIViewController {
     
-
     @IBOutlet var playerButtons: [UIButton]! {
         didSet {
-      
             for button in playerButtons {
                 guard let numberOfPlayers = NumberOfPlayers(rawValue: button.tag) else {
                     continue
@@ -42,6 +43,7 @@ class NumberOfPlayersViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        configureBackBarButton()
         title = "Number Of Players"
         //to be set in next View
         configureBackBarButton()
@@ -58,4 +60,13 @@ class NumberOfPlayersViewController: UIViewController {
         navigationController?.pushViewController(playerNameVC, animated: true)
     }
     
+<<<<<<< HEAD
+=======
+    @IBAction func playerButtonPressed(_ sender: UIButton) {
+        let kapicuGame = KapicuGame(sender.tag)
+        let playerNameVC = storyboard?.instantiateViewController(withIdentifier: "playerName") as! PlayerNameEntryViewController
+        playerNameVC.kapicuGame = kapicuGame
+        navigationController?.pushViewController(playerNameVC, animated: true)
+    }
+>>>>>>> upstream/master
 }

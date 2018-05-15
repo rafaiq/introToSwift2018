@@ -7,8 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+<<<<<<< HEAD
 		6A48810C208FED57004F7CD8 /* PushedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A48810B208FED57004F7CD8 /* PushedViewController.swift */; };
 		6A48810E208FFB78004F7CD8 /* ModalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A48810D208FFB78004F7CD8 /* ModalViewController.swift */; };
+=======
+		C0AB60C8208FFB7000467EF4 /* ModalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0AB60C7208FFB7000467EF4 /* ModalViewController.swift */; };
+		C0BD20F1208FED3400A0E6E7 /* PushedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0BD20F0208FED3400A0E6E7 /* PushedViewController.swift */; };
+>>>>>>> upstream/master
 		C0CC6BED20894CF200F61E7A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0CC6BEC20894CF200F61E7A /* AppDelegate.swift */; };
 		C0CC6BEF20894CF200F61E7A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0CC6BEE20894CF200F61E7A /* ViewController.swift */; };
 		C0CC6BF220894CF200F61E7A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C0CC6BF020894CF200F61E7A /* Main.storyboard */; };
@@ -19,8 +24,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+<<<<<<< HEAD
 		6A48810B208FED57004F7CD8 /* PushedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PushedViewController.swift; sourceTree = "<group>"; };
 		6A48810D208FFB78004F7CD8 /* ModalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModalViewController.swift; sourceTree = "<group>"; };
+=======
+		C0AB60C7208FFB7000467EF4 /* ModalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModalViewController.swift; sourceTree = "<group>"; };
+		C0BD20F0208FED3400A0E6E7 /* PushedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PushedViewController.swift; sourceTree = "<group>"; };
+>>>>>>> upstream/master
 		C0CC6BE920894CF200F61E7A /* AnotherTableView_KL_Class.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AnotherTableView_KL_Class.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C0CC6BEC20894CF200F61E7A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C0CC6BEE20894CF200F61E7A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -66,6 +76,8 @@
 				C0CC6BEE20894CF200F61E7A /* ViewController.swift */,
 				C0CC6BFE208952EA00F61E7A /* DetailTableViewCell.swift */,
 				C0D8D8F0208965F4005EE2FE /* DetailViewModel.swift */,
+				C0BD20F0208FED3400A0E6E7 /* PushedViewController.swift */,
+				C0AB60C7208FFB7000467EF4 /* ModalViewController.swift */,
 				C0CC6BF020894CF200F61E7A /* Main.storyboard */,
 				C0CC6BF320894CF200F61E7A /* Assets.xcassets */,
 				C0CC6BF520894CF200F61E7A /* LaunchScreen.storyboard */,
@@ -151,8 +163,13 @@
 				C0CC6BFF208952EA00F61E7A /* DetailTableViewCell.swift in Sources */,
 				C0CC6BEF20894CF200F61E7A /* ViewController.swift in Sources */,
 				C0CC6BED20894CF200F61E7A /* AppDelegate.swift in Sources */,
+<<<<<<< HEAD
 				6A48810C208FED57004F7CD8 /* PushedViewController.swift in Sources */,
 				6A48810E208FFB78004F7CD8 /* ModalViewController.swift in Sources */,
+=======
+				C0BD20F1208FED3400A0E6E7 /* PushedViewController.swift in Sources */,
+				C0AB60C8208FFB7000467EF4 /* ModalViewController.swift in Sources */,
+>>>>>>> upstream/master
 				C0D8D8F1208965F4005EE2FE /* DetailViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

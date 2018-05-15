@@ -102,6 +102,7 @@
             <point key="canvasLocation" x="456.80000000000001" y="117.39130434782609"/>
         </scene>
         <!--Pushed View Controller-->
+<<<<<<< HEAD
         <scene sceneID="zy2-Wn-pDU">
             <objects>
                 <viewController storyboardIdentifier="pushed" id="6RZ-Bq-ci4" customClass="PushedViewController" customModule="AnotherTableView_KL_Class" customModuleProvider="target" sceneMemberID="viewController">
@@ -111,10 +112,22 @@
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ok5-hI-SR5">
                                 <rect key="frame" x="166" y="55" width="42" height="21"/>
+=======
+        <scene sceneID="s0h-fc-REJ">
+            <objects>
+                <viewController storyboardIdentifier="pushed" id="FZD-jn-HCG" customClass="PushedViewController" customModule="AnotherTableView_KL_Class" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="dwP-o6-P5N">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mhb-VB-Bt3">
+                                <rect key="frame" x="166.5" y="37" width="42" height="21"/>
+>>>>>>> upstream/master
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+<<<<<<< HEAD
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="K55-1L-k5s">
                                 <rect key="frame" x="166" y="114" width="42" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -123,6 +136,10 @@
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="a9D-pF-Vfn">
                                 <rect key="frame" x="165.92616033755257" y="55" width="42.000000000000227" height="21"/>
+=======
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BIW-oc-Ogb">
+                                <rect key="frame" x="166.5" y="94" width="42" height="21"/>
+>>>>>>> upstream/master
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -130,6 +147,7 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
+<<<<<<< HEAD
                             <constraint firstItem="K55-1L-k5s" firstAttribute="top" secondItem="Ok5-hI-SR5" secondAttribute="bottom" constant="38" id="K6W-e7-IbT"/>
                             <constraint firstItem="Ok5-hI-SR5" firstAttribute="top" secondItem="ygW-yC-CLW" secondAttribute="top" constant="35" id="YhW-ph-mB7"/>
                             <constraint firstItem="K55-1L-k5s" firstAttribute="leading" secondItem="Ok5-hI-SR5" secondAttribute="leading" id="ZSk-yd-Gs4"/>
@@ -189,10 +207,50 @@
                                     <constraint firstAttribute="trailing" secondItem="UP8-4B-VG9" secondAttribute="trailing" constant="11" id="s1B-Wg-cyb"/>
                                     <constraint firstItem="UP8-4B-VG9" firstAttribute="leading" secondItem="Fhb-PY-oKz" secondAttribute="trailing" constant="58" id="yBC-9a-amI"/>
                                 </constraints>
+=======
+                            <constraint firstItem="Mhb-VB-Bt3" firstAttribute="top" secondItem="bYm-gM-dQn" secondAttribute="top" constant="17" id="IHf-de-dYE"/>
+                            <constraint firstItem="Mhb-VB-Bt3" firstAttribute="centerX" secondItem="bYm-gM-dQn" secondAttribute="centerX" id="Ml4-w1-mSs"/>
+                            <constraint firstItem="BIW-oc-Ogb" firstAttribute="centerX" secondItem="bYm-gM-dQn" secondAttribute="centerX" id="OGD-4n-69G"/>
+                            <constraint firstItem="BIW-oc-Ogb" firstAttribute="top" secondItem="Mhb-VB-Bt3" secondAttribute="bottom" constant="36" id="rcX-0F-qq4"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="bYm-gM-dQn"/>
+                    </view>
+                    <connections>
+                        <outlet property="messageLabel" destination="BIW-oc-Ogb" id="e0C-Ut-khI"/>
+                        <outlet property="titleLabel" destination="Mhb-VB-Bt3" id="yUp-PE-HNa"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="yz8-kK-4Qi" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1214" y="117"/>
+        </scene>
+        <!--Modal View Controller-->
+        <scene sceneID="T8f-dy-K5a">
+            <objects>
+                <viewController storyboardIdentifier="modal" id="1Wg-wz-6uV" customClass="ModalViewController" customModule="AnotherTableView_KL_Class" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Nl9-Na-VEP">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ctj-FG-7PN">
+                                <rect key="frame" x="160" y="328.5" width="54" height="30"/>
+                                <color key="backgroundColor" red="0.031372549020000001" green="0.49803921569999998" blue="0.72549019609999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Dismiss"/>
+                                <connections>
+                                    <action selector="dismissButtonPressed:" destination="1Wg-wz-6uV" eventType="touchUpInside" id="hN5-xp-N4v"/>
+                                </connections>
+                            </button>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="hQo-vG-z3V">
+                                <rect key="frame" x="67" y="192" width="240" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+>>>>>>> upstream/master
                             </view>
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
+<<<<<<< HEAD
                             <constraint firstItem="zZa-Ob-hRx" firstAttribute="centerX" secondItem="vHp-sd-PNk" secondAttribute="centerX" id="1aK-dL-KCN"/>
                             <constraint firstItem="zZa-Ob-hRx" firstAttribute="centerY" secondItem="vHp-sd-PNk" secondAttribute="centerY" id="BN6-ta-gMU"/>
                             <constraint firstItem="zZa-Ob-hRx" firstAttribute="top" secondItem="vHp-sd-PNk" secondAttribute="top" constant="251" id="yay-qE-jCS"/>
@@ -207,6 +265,17 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8Wo-fK-Jwh" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1989.5999999999999" y="115.59220389805098"/>
+=======
+                            <constraint firstItem="Ctj-FG-7PN" firstAttribute="centerX" secondItem="It5-dv-Rvx" secondAttribute="centerX" id="2ks-aN-aEL"/>
+                            <constraint firstItem="Ctj-FG-7PN" firstAttribute="centerY" secondItem="It5-dv-Rvx" secondAttribute="centerY" id="Bs3-pw-odq"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="It5-dv-Rvx"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="EhO-oN-6Ok" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1912" y="113"/>
+>>>>>>> upstream/master
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="ehB-72-cuq">

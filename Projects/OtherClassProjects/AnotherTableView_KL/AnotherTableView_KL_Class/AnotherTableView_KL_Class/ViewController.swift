@@ -19,7 +19,6 @@ class ViewController: UIViewController {
         title = "Another Table View"
         viewModels = DetailViewModel.defaultData
     }
-
 }
 
 extension ViewController: UITableViewDataSource {
@@ -46,6 +45,7 @@ extension ViewController: UITableViewDelegate {
     
     private func presentActionSheetWith(_ viewModel: DetailViewModel) {
         let actionSheetController = UIAlertController(title: "Select Action", message: "Select action for view model", preferredStyle: .actionSheet)
+    
         let modalAction = UIAlertAction(title: "Modal", style: .default) { [weak self] (_) in
             self?.presentModal(viewModel)
         }
@@ -53,8 +53,8 @@ extension ViewController: UITableViewDelegate {
             self?.pushView(viewModel)
         }
         
-        let deleteAction = UIAlertAction(title: "Delete", style: .destructive) { [weak self] (_) in
-            self?.delete(viewModel)
+        let deleteAction = UIAlertAction(title: "Delete", style: .destructive) { (_) in
+            self.delete(viewModel)
         }
         
         let cancelAction = UIAlertAction(title: "Cancel", style: .cancel, handler: nil)
@@ -65,10 +65,16 @@ extension ViewController: UITableViewDelegate {
         actionSheetController.addAction(cancelAction)
         
         navigationController?.present(actionSheetController, animated: true, completion: nil)
+        
+        // every object referenced inside a completion block receives a strong reference by the function/object owning the completion block
+        
+        // navController >s viewController
+        // navController >s alertController
     }
     
     private func presentModal(_ viewModel: DetailViewModel) {
         let modalVC = storyboard?.instantiateViewController(withIdentifier: "modal") as! ModalViewController
+<<<<<<< HEAD
         
         self.definesPresentationContext = true
         modalVC.modalPresentationStyle = .overCurrentContext
@@ -77,21 +83,32 @@ extension ViewController: UITableViewDelegate {
         
         navigationController?.present(modalVC, animated: true, completion: nil)
         
+=======
+>>>>>>> upstream/master
         
+        self.definesPresentationContext = true
+        modalVC.modalPresentationStyle = .overCurrentContext
+        
+        modalVC.viewModel = viewModel
+        navigationController?.present(modalVC, animated: true, completion: nil)
     }
     
     private func pushView(_ viewModel: DetailViewModel) {
         let pushedVC = storyboard?.instantiateViewController(withIdentifier: "pushed") as! PushedViewController
+<<<<<<< HEAD
         
         pushedVC.viewModel = viewModel
         
         navigationController?.pushViewController(pushedVC, animated: true)
         
+=======
+        pushedVC.viewModel = viewModel
+        navigationController?.pushViewController(pushedVC, animated: true)
+>>>>>>> upstream/master
     }
     
     private func delete(_ viewModel: DetailViewModel) {
         viewModels = viewModels.filter({ $0.imageName != viewModel.imageName })
         tableView.reloadData()
     }
-    
 }
