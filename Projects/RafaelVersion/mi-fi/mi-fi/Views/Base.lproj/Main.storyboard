@@ -36,6 +36,36 @@
             <point key="canvasLocation" x="1996" y="117.39130434782609"/>
         </scene>
         <!--View Controller-->
+        <scene sceneID="A4I-wg-ovC">
+            <objects>
+                <viewController id="ntz-Ml-KQO" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ISP-SV-ETI">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="e1M-Yy-eb5"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="LOC-Pi-YbM" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2786" y="116"/>
+        </scene>
+        <!--Detal View Controller-->
+        <scene sceneID="FmL-xs-eeU">
+            <objects>
+                <viewController id="ght-Ek-5RW" customClass="DetalViewController" customModule="mi_fi" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="cu3-au-M2D">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="jQb-Su-GVE"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1ON-8e-3Ut" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3666" y="126"/>
+        </scene>
+        <!--View Controller-->
         <scene sceneID="2dy-vu-Xin">
             <objects>
                 <viewController id="4XL-Vz-YEF" sceneMemberID="viewController">
@@ -60,10 +90,10 @@
             </objects>
             <point key="canvasLocation" x="1996" y="824.43778110944538"/>
         </scene>
-        <!--View Controller-->
+        <!--More View Controller-->
         <scene sceneID="W8d-xg-fsA">
             <objects>
-                <viewController id="Wcu-y2-siH" sceneMemberID="viewController">
+                <viewController id="Wcu-y2-siH" customClass="MoreViewController" customModule="mi_fi" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="K2g-fc-S1z">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -91,6 +121,7 @@
                 <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="oot-rQ-Eos" sceneMemberID="viewController">
                     <toolbarItems/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="eOT-pN-ba5">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>
