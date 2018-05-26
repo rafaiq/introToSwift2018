@@ -8,26 +8,26 @@
 
 import UIKit
 
-<<<<<<< HEAD
-//enum NumberOfPlayers: Int {
-//    case two = 2
-//    case three = 3
-//    case four = 4
+//<<<<<<< HEAD
+////enum NumberOfPlayers: Int {
+////    case two = 2
+////    case three = 3
+////    case four = 4
+////
+////    var txt: String {
+////        switch self {
+////        case .two:
+////            return "Two"
+////        case .three:
+////            return "Three"
+////        case .four:
+////            return "Four"
+////        }
+////    }
+////}
 //
-//    var txt: String {
-//        switch self {
-//        case .two:
-//            return "Two"
-//        case .three:
-//            return "Three"
-//        case .four:
-//            return "Four"
-//        }
-//    }
-//}
-
-=======
->>>>>>> upstream/master
+//=======
+//>>>>>>> upstream/master
 class NumberOfPlayersViewController: UIViewController {
     
     @IBOutlet var playerButtons: [UIButton]! {
@@ -60,13 +60,13 @@ class NumberOfPlayersViewController: UIViewController {
         navigationController?.pushViewController(playerNameVC, animated: true)
     }
     
-<<<<<<< HEAD
-=======
+//<<<<<<< HEAD
+//=======
     @IBAction func playerButtonPressed(_ sender: UIButton) {
         let kapicuGame = KapicuGame(sender.tag)
         let playerNameVC = storyboard?.instantiateViewController(withIdentifier: "playerName") as! PlayerNameEntryViewController
         playerNameVC.kapicuGame = kapicuGame
         navigationController?.pushViewController(playerNameVC, animated: true)
     }
->>>>>>> upstream/master
+//>>>>>>> upstream/master
 }

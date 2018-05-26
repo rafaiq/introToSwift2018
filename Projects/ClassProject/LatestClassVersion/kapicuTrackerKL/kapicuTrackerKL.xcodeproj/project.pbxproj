@@ -66,11 +66,11 @@
 			children = (
 				C0CF4818206B19AB00131955 /* HomeViewController.swift */,
 				C0DF1CE4207451CD005FCD3D /* NumberOfPlayersViewController.swift */,
-<<<<<<< HEAD
-				6A48814D20928CCD004F7CD8 /* PlayerNameEntryViewController.swift */,
-=======
+//<<<<<<< HEAD
+				//6A48814D20928CCD004F7CD8 /* PlayerNameEntryViewController.swift */,
+//=======
 				C0B5DCAB20928CBB0006B977 /* PlayerNameEntryViewController.swift */,
->>>>>>> upstream/master
+//>>>>>>> upstream/master
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -129,11 +129,11 @@
 		C0CF4805206B11B900131955 /* kapicuTrackerKL */ = {
 			isa = PBXGroup;
 			children = (
-<<<<<<< HEAD
-				6A48814F20929B81004F7CD8 /* Models */,
-=======
+//<<<<<<< HEAD
+				//6A48814F20929B81004F7CD8 /* Models */,
+//=======
 				C0B5DCAD20929B630006B977 /* Models */,
->>>>>>> upstream/master
+//>>>>>>> upstream/master
 				C00AEA5E2076F0FE0007F098 /* Styles */,
 				C0CF4806206B11B900131955 /* AppDelegate.swift */,
 				C00AEA5C2076F0AF0007F098 /* Extensions */,
@@ -218,20 +218,20 @@
 			buildActionMask = 2147483647;
 			files = (
 				C0DF1CE3207447A7005FCD3D /* UIColorExtensions.swift in Sources */,
-<<<<<<< HEAD
-				6A48814E20928CCD004F7CD8 /* PlayerNameEntryViewController.swift in Sources */,
-=======
+//<<<<<<< HEAD
+				//6A48814E20928CCD004F7CD8 /* PlayerNameEntryViewController.swift in Sources */,
+//=======
 				C0B5DCAC20928CBB0006B977 /* PlayerNameEntryViewController.swift in Sources */,
->>>>>>> upstream/master
+//>>>>>>> upstream/master
 				C0CF4807206B11B900131955 /* AppDelegate.swift in Sources */,
 				C0B5DCB12092ABDE0006B977 /* KapicuGame.swift in Sources */,
 				C00AEA5A2076EE850007F098 /* UIViewControllerExtensions.swift in Sources */,
 				C00AEA602076F1110007F098 /* ButtonStyle.swift in Sources */,
-<<<<<<< HEAD
-				6A48815120929BBE004F7CD8 /* GameModel.swift in Sources */,
-=======
+//<<<<<<< HEAD
+				//6A48815120929BBE004F7CD8 /* GameModel.swift in Sources */,
+//=======
 				C0B5DCAF20929B7E0006B977 /* GameModel.swift in Sources */,
->>>>>>> upstream/master
+//>>>>>>> upstream/master
 				C0CF4819206B19AB00131955 /* HomeViewController.swift in Sources */,
 				C0DF1CE5207451CD005FCD3D /* NumberOfPlayersViewController.swift in Sources */,
 			);

@@ -2,11 +2,7 @@
 //  GameModel.swift
 //  kapicuTrackerKL
 //
-<<<<<<< HEAD
-//  Created by Rafael Rodriguez on 4/26/18.
-=======
 //  Created by Kevin Lopez on 4/26/18.
->>>>>>> upstream/master
 //  Copyright © 2018 io.ricoLabs. All rights reserved.
 //
 
@@ -29,28 +25,28 @@ enum NumberOfPlayers: Int {
     }
 }
 
-<<<<<<< HEAD
-enum PlayerToConfigure {
-    case one
-    case two
-    case three
-    case four
-    case allConfigured
-}
-
-struct GameModel {
-    var numberOftPlayer: NumberOfPlayers = .two
-    var firstPlayer: String = ""
-    var secondPlayer: String = ""
-    var thirdPlayer: String = ""
-}
-
-extension GameModel {
-    private var isTeamPlayer: Bool {
-        return numberOftPlayer == .four
-    }
-}
-=======
+//<<<<<<< HEAD
+//enum PlayerToConfigure {
+//    case one
+//    case two
+//    case three
+//    case four
+//    case allConfigured
+//}
+//
+//struct GameModel {
+//    var numberOftPlayer: NumberOfPlayers = .two
+//    var firstPlayer: String = ""
+//    var secondPlayer: String = ""
+//    var thirdPlayer: String = ""
+//}
+//
+//extension GameModel {
+//    private var isTeamPlayer: Bool {
+//        return numberOftPlayer == .four
+//    }
+//}
+//=======
 enum PlayerToConfigure: Int {
     case one = 1
     case two = 2
@@ -131,4 +127,4 @@ extension GameModel {
 
 
 
->>>>>>> upstream/master
+//>>>>>>> upstream/master

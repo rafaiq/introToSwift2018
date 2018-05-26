@@ -2,11 +2,11 @@
 //  PlayerNameEntryViewController.swift
 //  kapicuTrackerKL
 //
-<<<<<<< HEAD
-//  Created by Rafael Rodriguez on 4/26/18.
-=======
+//<<<<<<< HEAD
+////  Created by Rafael Rodriguez on 4/26/18.
+//=======
 //  Created by Kevin Lopez on 4/26/18.
->>>>>>> upstream/master
+//>>>>>>> upstream/master
 //  Copyright © 2018 io.ricoLabs. All rights reserved.
 //
 
@@ -14,27 +14,27 @@ import UIKit
 
 class PlayerNameEntryViewController: UIViewController {
 
-<<<<<<< HEAD
-    @IBOutlet weak var nameTextField: UITextField!
-    
-    var gameModel: GameModel!
-    
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        title = "Player name Entry"
-        navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Next", style: .plain, target: self, action: #selector(nextButtonPressed))
-        
-        //made to a func UIViewController in UIVIewnavigationItem.rightBarButtonItem?.tintColor = .gray
-        configureNextBarButton()
-    }
-    
-    @objc private func nextButtonPressed() {
-        
-    }
-    
-
-}
-=======
+//<<<<<<< HEAD
+//    @IBOutlet weak var nameTextField: UITextField!
+//
+//    var gameModel: GameModel!
+//
+//    override func viewDidLoad() {
+//        super.viewDidLoad()
+//        title = "Player name Entry"
+//        navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Next", style: .plain, target: self, action: #selector(nextButtonPressed))
+//
+//        //made to a func UIViewController in UIVIewnavigationItem.rightBarButtonItem?.tintColor = .gray
+//        configureNextBarButton()
+//    }
+//
+//    @objc private func nextButtonPressed() {
+//
+//    }
+//
+//
+//}
+//=======
     @IBOutlet weak var nameTextField: UITextField! {
         didSet {
             nameTextField.delegate = self
@@ -100,4 +100,4 @@ extension PlayerNameEntryViewController: UITextFieldDelegate {
     }
 }
 
->>>>>>> upstream/master
+//>>>>>>> upstream/master
