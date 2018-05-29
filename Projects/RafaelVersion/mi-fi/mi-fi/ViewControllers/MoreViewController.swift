@@ -7,14 +7,29 @@
 //
 
 import UIKit
-import WebKit//for work with Web View
 
-class MoreViewController: UIViewController, UIWebViewDelegate {
+class MoreViewController: UIViewController {
 
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        loadWebView()
+        
+    }
+    
+    override func didReceiveMemoryWarning() {
+        super.didReceiveMemoryWarning()
+        // Dispose of any resources that can be recreated.
+    }
+    
+
+
+}
+
+extension MoreViewController: UIWebViewDelegate {
+    
+    private func loadWebView() {
         //set fullscreen in the View
         let myWebView:UIWebView = UIWebView(frame: CGRect(x:0, y:0, width: UIScreen.main.bounds.width, height:UIScreen.main.bounds.height))
         
@@ -26,13 +41,9 @@ class MoreViewController: UIViewController, UIWebViewDelegate {
         let myURL = URL(string: "https://www.google.com")
         let myURLRequest:URLRequest = URLRequest(url: myURL!)
         myWebView.loadRequest(myURLRequest)
-    
         
-    }
-    
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+        navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: .refresh, target: myWebView, action: #selector(myWebView.reload))
+        
     }
     
     func webViewDidStartLoad(_ webView: UIWebView)
@@ -43,5 +54,5 @@ class MoreViewController: UIViewController, UIWebViewDelegate {
     {
         
     }
-
+    
 }
