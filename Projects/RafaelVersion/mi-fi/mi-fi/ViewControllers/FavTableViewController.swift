@@ -9,9 +9,13 @@
 import UIKit
 
 class FavTableViewController: UITableViewController {
+    
+    var listPlazas: [PlazasPublicas] = []
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        listPlazas = PlazasPublicas.defaultDataArray
 
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
@@ -22,33 +26,31 @@ class FavTableViewController: UITableViewController {
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+        
     }
-
-    // MARK: - Table view data source
 
     override func numberOfSections(in tableView: UITableView) -> Int {
-        // #warning Incomplete implementation, return the number of sections
-        return 0
-    }
-
-    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        // #warning Incomplete implementation, return the number of rows
+        
         return 1
     }
 
-    
-    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "cellFav") as! FavTableViewCell
-                //let pokemon = pokemonList[indexPath.row]
+    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         
-                cell.imageFav.image = nil
-                cell.NameFav.text = "Name"
-                cell.MunicipalityFav.text = "Municipality"
-                cell.LatitudFav.text = "Latitud"
-                cell.LongitudFav.text = "Longitud"
+        return listPlazas.count
+    }
 
-                return cell ?? UITableViewCell()
+    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        
+        let cell = tableView.dequeueReusableCell(withIdentifier: "cellFav") as! FavTableViewCell
+        let plaza = listPlazas[indexPath.row]
+        
+        //cell.imageFav.image = nil//will be use same for now
+        cell.NameFav.text = plaza.name
+        cell.MunicipalityFav.text = plaza.municipality
+        cell.LatitudFav.text = String(plaza.coordinateLat)
+        cell.LongitudFav.text = String(plaza.coordinateLong)
+
+        return cell// ?? UITableViewCell()
     }
  
 

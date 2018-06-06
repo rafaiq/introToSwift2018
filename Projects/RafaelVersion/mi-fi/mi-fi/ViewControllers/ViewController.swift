@@ -20,15 +20,16 @@ class ViewController: UIViewController {
         navigationController?.navigationBar.titleTextAttributes = textAttributes
         
         //Buttons
-        let image = UIImage(named: "wifi-icon.png")
+        let image_orange = UIImage(named: "wifi_orange_180.png")
+        let image_green = UIImage(named: "wifi_green_180.png")
         
         //let button = UIButton()
         publicButton.frame = CGRect(x: 10, y: 100, width: 100, height: 100)
-        publicButton.setBackgroundImage(image, for: UIControlState.normal)
+        publicButton.setBackgroundImage(image_orange, for: UIControlState.normal)
         publicButton.addTarget(self, action:#selector(ViewController.publicButtonPressed(_:)), for: .touchUpInside)
         
         privateButton.frame = CGRect(x: 10, y: 100, width: 100, height: 100)
-        privateButton.setBackgroundImage(image, for: UIControlState.normal)
+        privateButton.setBackgroundImage(image_green, for: UIControlState.normal)
         privateButton.addTarget(self, action:#selector(ViewController.publicButtonPressed(_:)), for: .touchUpInside)
         
         self.view.addSubview(publicButton)

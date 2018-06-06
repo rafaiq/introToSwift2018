@@ -78,46 +78,46 @@ class FavoriteTableViewController: UIViewController {
 
 }
 
-//extension FavoriteTableViewController: UITableViewDataSource {
-//
-//    func numberOfSections(in tableView: UITableView) -> Int {
-//        return 1
-//    }
-//
-//    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-//        return 3
-//    }
-//
-//    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-//
-//        let cell = tableView.dequeueReusableCell(withIdentifier: "cellFavorite") as! FavoriteTableViewCell
-//        //let pokemon = pokemonList[indexPath.row]
-//
-//        cell.favImage.image = nil
-//        cell.favname.text = "Name"
-//        cell.favMunicipality.text = "Municipality"
-//        cell.favLatitud.text = "Latitud"
-//        cell.favLongitud.text = "Longitud"
-//
-//
-//
-//
-//        return cell //?? UITableViewCell()
-//    }
-//
-//}
+extension FavoriteTableViewController: UITableViewDataSource {
 
-//extension ViewController: UITableViewDelegate {
-//
-//    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-//
-//
-//    }
-//
-//    func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
-//
-//    }
-//
-//}
+    func numberOfSections(in tableView: UITableView) -> Int {
+        return 1
+    }
+
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return 1
+    }
+
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+
+        let cell = tableView.dequeueReusableCell(withIdentifier: "cellFavorite") as! FavoriteTableViewCell
+        //let pokemon = pokemonList[indexPath.row]
+
+        //cell.favImage.image = nil
+        cell.favname.text = "Name"
+        cell.favMunicipality.text = "Municipality"
+        cell.favLatitud.text = "Latitud"
+        cell.favLongitud.text = "Longitud"
+
+
+
+
+        return cell //?? UITableViewCell()
+    }
+
+}
+
+extension ViewController: UITableViewDelegate {
+
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+
+
+    }
+
+    func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
+
+    }
+
+}
 
 

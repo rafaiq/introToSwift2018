@@ -13,7 +13,7 @@
 		6A19C54320B4E02E003D6515 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6A19C54220B4E02E003D6515 /* Assets.xcassets */; };
 		6A19C54620B4E02E003D6515 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6A19C54420B4E02E003D6515 /* LaunchScreen.storyboard */; };
 		6A19C54F20B4E439003D6515 /* CustomColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A19C54E20B4E439003D6515 /* CustomColors.swift */; };
-		6A686FF220B89A200046CC12 /* PlazaPublicaModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A686FF120B89A200046CC12 /* PlazaPublicaModel.swift */; };
+		6A686FF220B89A200046CC12 /* PlazasPublicas.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A686FF120B89A200046CC12 /* PlazasPublicas.swift */; };
 		6A686FF420B9E43A0046CC12 /* MoreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A686FF320B9E43A0046CC12 /* MoreViewController.swift */; };
 		6A686FF620B9E5130046CC12 /* QueryService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A686FF520B9E5130046CC12 /* QueryService.swift */; };
 		6A686FFA20B9E7BD0046CC12 /* DetalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A686FF920B9E7BD0046CC12 /* DetalViewController.swift */; };
@@ -22,6 +22,7 @@
 		6A68700020BB73590046CC12 /* FavoriteTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A686FFF20BB73590046CC12 /* FavoriteTableViewCell.swift */; };
 		6A68700220BD90A90046CC12 /* FavTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A68700120BD90A90046CC12 /* FavTableViewController.swift */; };
 		6A68700420BD96910046CC12 /* FavTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A68700320BD96910046CC12 /* FavTableViewCell.swift */; };
+		6A68700720BFA3B10046CC12 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6A68700620BFA3B10046CC12 /* Alamofire.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,7 +34,7 @@
 		6A19C54520B4E02E003D6515 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6A19C54720B4E02E003D6515 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6A19C54E20B4E439003D6515 /* CustomColors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomColors.swift; sourceTree = "<group>"; };
-		6A686FF120B89A200046CC12 /* PlazaPublicaModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlazaPublicaModel.swift; sourceTree = "<group>"; };
+		6A686FF120B89A200046CC12 /* PlazasPublicas.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlazasPublicas.swift; sourceTree = "<group>"; };
 		6A686FF320B9E43A0046CC12 /* MoreViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoreViewController.swift; sourceTree = "<group>"; };
 		6A686FF520B9E5130046CC12 /* QueryService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QueryService.swift; sourceTree = "<group>"; };
 		6A686FF920B9E7BD0046CC12 /* DetalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetalViewController.swift; sourceTree = "<group>"; };
@@ -42,6 +43,7 @@
 		6A686FFF20BB73590046CC12 /* FavoriteTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteTableViewCell.swift; sourceTree = "<group>"; };
 		6A68700120BD90A90046CC12 /* FavTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavTableViewController.swift; sourceTree = "<group>"; };
 		6A68700320BD96910046CC12 /* FavTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavTableViewCell.swift; sourceTree = "<group>"; };
+		6A68700620BFA3B10046CC12 /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = Carthage/Build/iOS/Alamofire.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -49,6 +51,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6A68700720BFA3B10046CC12 /* Alamofire.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -60,6 +63,7 @@
 			children = (
 				6A19C53A20B4E02C003D6515 /* mi-fi */,
 				6A19C53920B4E02C003D6515 /* Products */,
+				6A68700520BFA3B00046CC12 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -112,7 +116,7 @@
 		6A19C55120B4E48B003D6515 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				6A686FF120B89A200046CC12 /* PlazaPublicaModel.swift */,
+				6A686FF120B89A200046CC12 /* PlazasPublicas.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -134,6 +138,14 @@
 			path = Views;
 			sourceTree = "<group>";
 		};
+		6A68700520BFA3B00046CC12 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6A68700620BFA3B10046CC12 /* Alamofire.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -144,6 +156,7 @@
 				6A19C53420B4E02C003D6515 /* Sources */,
 				6A19C53520B4E02C003D6515 /* Frameworks */,
 				6A19C53620B4E02C003D6515 /* Resources */,
+				6A68700820BFA3D10046CC12 /* Carthage */,
 			);
 			buildRules = (
 			);
@@ -200,6 +213,24 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		6A68700820BFA3D10046CC12 /* Carthage */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/iOS/Alamofire.framework",
+			);
+			name = Carthage;
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/usr/local/bin/carthage copy-frameworks";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		6A19C53420B4E02C003D6515 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -215,7 +246,7 @@
 				6A19C53C20B4E02C003D6515 /* AppDelegate.swift in Sources */,
 				6A68700220BD90A90046CC12 /* FavTableViewController.swift in Sources */,
 				6A686FF620B9E5130046CC12 /* QueryService.swift in Sources */,
-				6A686FF220B89A200046CC12 /* PlazaPublicaModel.swift in Sources */,
+				6A686FF220B89A200046CC12 /* PlazasPublicas.swift in Sources */,
 				6A68700020BB73590046CC12 /* FavoriteTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -362,6 +393,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = MTSUT4VG35;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = "mi-fi/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -380,6 +415,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = MTSUT4VG35;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = "mi-fi/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
