@@ -8,7 +8,7 @@
 
 import Foundation
 
-struct PlazasPublicas {
+struct PlazaPublica: Codable {
     var plazaid: Int
     var name: String
     var municipality: String
@@ -16,10 +16,10 @@ struct PlazasPublicas {
     var coordinateLong: Float
 }
 
-extension PlazasPublicas {
+extension PlazaPublica {
     
-    static var defaultData: PlazasPublicas {
-        let plazaPublica = PlazasPublicas(
+    static var defaultData: PlazaPublica {
+        let plazaPublica = PlazaPublica(
                             plazaid: 0,
                             name: "Name",
                             municipality: "Municipality",
@@ -28,10 +28,10 @@ extension PlazasPublicas {
         return plazaPublica
     }
     
-    static var defaultDataArray: [PlazasPublicas] {
-        var array = [PlazasPublicas]()
+    static var defaultDataArray: [PlazaPublica] {
+        var array = [PlazaPublica]()
         for _ in 0..<10 {
-            array.append(PlazasPublicas(
+            array.append(PlazaPublica(
                             plazaid: 0,
                             name: "Name",
                             municipality: "Municipality",

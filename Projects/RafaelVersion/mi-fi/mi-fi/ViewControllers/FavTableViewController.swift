@@ -10,12 +10,12 @@ import UIKit
 
 class FavTableViewController: UITableViewController {
     
-    var listPlazas: [PlazasPublicas] = []
+    var listPlazas: [PlazaPublica] = []
 
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        listPlazas = PlazasPublicas.defaultDataArray
+        listPlazas = PlazaPublica.defaultDataArray
 
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
