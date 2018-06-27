@@ -38,7 +38,7 @@ extension MoreViewController: UIWebViewDelegate {
         myWebView.delegate = self
         
         //Load web site into my web view
-        let myURL = URL(string: "https://www.google.com")
+        let myURL = URL(string: "https://data.pr.gov/Desarrollo-e-Infraestructura/Plaza-wifi-data/smi4-9tnp")
         let myURLRequest:URLRequest = URLRequest(url: myURL!)
         myWebView.loadRequest(myURLRequest)
         

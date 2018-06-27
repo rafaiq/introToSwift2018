@@ -30,6 +30,7 @@ extension AppData {
         guard let response = plazaPublicaResponse else { return }
         self.plazapublica.append(contentsOf: response.results)
     }
+
     
     func updatePlazaPublicaImage(with plazaPublicaDetailResponse: PlazaPublicaDetailResponse?) {
         guard let response = plazaPublicaDetailResponse else { return }

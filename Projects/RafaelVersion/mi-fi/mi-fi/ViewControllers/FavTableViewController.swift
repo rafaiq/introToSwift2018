@@ -47,8 +47,8 @@ class FavTableViewController: UITableViewController {
         //cell.imageFav.image = nil//will be use same for now
         cell.NameFav.text = plaza.name
         cell.MunicipalityFav.text = plaza.municipality
-        cell.LatitudFav.text = String(plaza.coordinateLat)
-        cell.LongitudFav.text = String(plaza.coordinateLong)
+        cell.LatitudFav.text = "String"
+        cell.LongitudFav.text = "String"
 
         return cell// ?? UITableViewCell()
     }

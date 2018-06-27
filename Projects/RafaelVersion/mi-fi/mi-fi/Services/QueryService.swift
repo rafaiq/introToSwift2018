@@ -41,6 +41,7 @@ class QueryService {
 extension QueryService {
     
     func fetchOriginalPlazaPublica(completion: @escaping SuccessResult) {
+
         Alamofire.request(nextURLString).responseJSON { (response) in
             
             let didUpdatePlazaPublica = self.updatePlazaPublicaResults(response)
@@ -55,13 +56,50 @@ extension QueryService {
             completion(didUpdateDetails, self.errorMessage)
         }
     }
+    
+    //new fetch test
+    func fetchingTest(){
+        print("Enter to fetchingTest")
+        
+        Alamofire.request(nextURLString, method: .get,
+                          encoding: JSONEncoding.default).responseJSON { response in
+                            guard response.result.error == nil else {
+                            // got an error in getting the data, need to handle it
+                            print("error calling POST on testing")
+                            print(response.result.error!)
+                            return
+                        }
+                        // make sure we got some JSON since that's what we expect
+                        guard let json = response.result.value as? [String: Any] else {
+                            print("didn't get a object as JSON from API")
+                            print("Error: \(response.result.error)")
+                            return
+                        }
+                        // get and print the uuid//
+                        guard let jsonBody = json["body"] as? String else {
+                            print("Could not get response body from JSON")
+                            print(json)
+                            return
+                        }
+                        print("The body is: " + jsonBody)
+                }
+    }//end
+    
+    
 }
 
 extension QueryService {
     
     private func updatePlazaPublicaResults(_ response: DataResponse<Any>) -> Bool {
-        guard let data = response.data else { return false }
         
+//        let plazaPublicaResponse = PlazaPublica.defaultDataArray
+//        appData.updatePlazaPublicaList(with: plazaPublicaResponse)
+//        return true
+        
+        
+        //--//
+        guard let data = response.data else { return false }
+
         if let plazaPublicaResponse = convertData(to: PlazaPublicaResponse.self, data) {
             appData.updatePlazaPublicaList(with: plazaPublicaResponse)
             return true
@@ -71,6 +109,7 @@ extension QueryService {
     }
     
     private func updatePlazaPublicaDetails(_ response: DataResponse<Any>) -> Bool {
+        
         guard let data = response.data else { return false }
         
         if let plazaPublicaDetailResponse = convertData(to: PlazaPublicaDetailResponse.self, data) {
