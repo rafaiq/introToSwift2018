@@ -36,6 +36,7 @@ class PlazaViewController: UIViewController {
     
     @objc private func loadOriginalPlazaInfoStaticData() {
         plazaPublicaListStatic = PlazaPublica.defaultDataArrayStatic
+        self.tableView.reloadData()
     }
 
     override func didReceiveMemoryWarning() {

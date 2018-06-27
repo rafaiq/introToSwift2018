@@ -8,6 +8,7 @@
 
 import UIKit
 import MapKit
+import CoreData
 
 class DetalViewController: UIViewController {
     
@@ -19,10 +20,15 @@ class DetalViewController: UIViewController {
     @IBOutlet weak var plazaDetailMapView: MKMapView!
     
     var viewModel: PlazaPublica!
+    let appDelegateDetail = UIApplication.shared.delegate as! AppDelegate
 
     override func viewDidLoad() {
         super.viewDidLoad()
         title = "Mi Fi Plaza Detail"
+        
+        //Save Favorite with Core Data
+        navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Save Favorite", style: .plain, target: self,
+                                                            action: #selector(saveToFavorite))
 
         //charge with info come from TableView of PlazaViewController
         plazaDetailName.text = viewModel.properties_nombre
@@ -75,12 +81,45 @@ class DetalViewController: UIViewController {
         // Pass the selected object to the new view controller.
     }
     */
-    //set default Map Info
+    //set default Map Infoem
     let regionRadius: CLLocationDistance = 1000
     func centerMapOnLocation(location: CLLocation) {
         let coordinateRegion = MKCoordinateRegionMakeWithDistance(location.coordinate,
                                                                   regionRadius, regionRadius)
         plazaDetailMapView.setRegion(coordinateRegion, animated: true)
     }
+    
+    
+    //Save to Favorite
+    @objc private func saveToFavorite(){
+        
+        let context = appDelegateDetail.persistentContainer.viewContext
+        let entity = NSEntityDescription.entity(forEntityName: "PlazaPublicaCore", in: context)
+        let newPlaza = NSManagedObject(entity: entity!, insertInto: context)
+        
+        //
+        let idPlaza = viewModel.id
+        let name = viewModel.properties_nombre
+        let municipality = viewModel.properties__municipio
+        let latitud = viewModel.geometry__coordinates001!["coordinates"]?[0]
+        let longitud = viewModel.geometry__coordinates001!["coordinates"]?[1]
+        //
+        
+        newPlaza.setValue(idPlaza, forKey: "idPlazaCore")
+        newPlaza.setValue(name, forKey: "nameCore")
+        newPlaza.setValue(municipality, forKey: "municipalityCore")
+        newPlaza.setValue(latitud, forKey: "latitudCore")
+        newPlaza.setValue(longitud, forKey: "longitudCore")
+        
+        do {
+            try context.save()
+        } catch {
+            print("Failed saving")
+        }
+        
+    }
+    
+    
+    
 
 }

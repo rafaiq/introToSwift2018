@@ -7,16 +7,46 @@
 //
 
 import UIKit
+import CoreData
 
 class FavTableViewController: UITableViewController {
     
-    var listPlazas: [PlazaPublica] = []
+    let appDelegateFav = UIApplication.shared.delegate as! AppDelegate
+    
+    var listFavPlazas: [PlazaPublica] = []
 
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        listPlazas = PlazaPublica.defaultDataArray
-
+        //CoreData
+        let context = appDelegateFav.persistentContainer.viewContext
+        
+        //TODO: change to load data from Entity
+        //listFavPlazas = PlazaPublica.defaultDataArrayStatic
+        
+        let request = NSFetchRequest<NSFetchRequestResult>(entityName: "PlazaPublicaCore")
+        //request.predicate = NSPredicate(format: "age = %@", "12")
+        request.returnsObjectsAsFaults = false
+        do {
+            let result = try context.fetch(request)
+            for data in result as! [NSManagedObject] {
+                print(data.value(forKey: "nameCore") as! String)
+                
+                var plaza: PlazaPublica = PlazaPublica.defaultData
+                plaza.properties_nombre = data.value(forKey: "nameCore") as? String
+                plaza.properties__municipio = data.value(forKey: "municipalityCore") as? String
+                plaza.geometry__coordinates001!["coordinates"]?[0] = (data.value(forKey: "latitudCore") as? String)!
+                plaza.geometry__coordinates001!["coordinates"]?[1] = (data.value(forKey: "longitudCore") as? String)!
+                
+                listFavPlazas.append(plaza)
+            }
+            
+        } catch {
+            
+            print("Failed")
+        }
+        self.tableView.reloadData()
+        
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
 
@@ -36,20 +66,19 @@ class FavTableViewController: UITableViewController {
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         
-        return listPlazas.count
+        return listFavPlazas.count
     }
 
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
         let cell = tableView.dequeueReusableCell(withIdentifier: "cellFav") as! FavTableViewCell
-        let plaza = listPlazas[indexPath.row]
+        let plaza = listFavPlazas[indexPath.row]
         
         //cell.imageFav.image = nil//will be use same for now
-        cell.NameFav.text = plaza.name
-        cell.MunicipalityFav.text = plaza.municipality
-        cell.LatitudFav.text = "String"
-        cell.LongitudFav.text = "String"
-
+        cell.NameFav.text = plaza.properties_nombre
+        cell.MunicipalityFav.text = plaza.properties__municipio
+        cell.LatitudFav.text = plaza.geometry__coordinates001!["coordinates"]?[0]
+        cell.LongitudFav.text = plaza.geometry__coordinates001!["coordinates"]?[1]
         return cell// ?? UITableViewCell()
     }
  

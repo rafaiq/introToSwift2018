@@ -19,6 +19,7 @@
 		6A25730620DB402600CD397F /* PlazaPublicaDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A25730520DB402600CD397F /* PlazaPublicaDetail.swift */; };
 		6A25730820DB4FA600CD397F /* PlazaTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A25730720DB4FA600CD397F /* PlazaTableViewCell.swift */; };
 		6A25730A20DB573500CD397F /* PlazaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A25730920DB573500CD397F /* PlazaViewController.swift */; };
+		6A3A130820E41F50009C0B5C /* mi-fi.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 6A3A130620E41F50009C0B5C /* mi-fi.xcdatamodeld */; };
 		6A686FF220B89A200046CC12 /* PlazaPublica.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A686FF120B89A200046CC12 /* PlazaPublica.swift */; };
 		6A686FF420B9E43A0046CC12 /* MoreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A686FF320B9E43A0046CC12 /* MoreViewController.swift */; };
 		6A686FF620B9E5130046CC12 /* QueryService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A686FF520B9E5130046CC12 /* QueryService.swift */; };
@@ -46,6 +47,7 @@
 		6A25730520DB402600CD397F /* PlazaPublicaDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlazaPublicaDetail.swift; sourceTree = "<group>"; };
 		6A25730720DB4FA600CD397F /* PlazaTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlazaTableViewCell.swift; sourceTree = "<group>"; };
 		6A25730920DB573500CD397F /* PlazaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlazaViewController.swift; sourceTree = "<group>"; };
+		6A3A130720E41F50009C0B5C /* mi-fi.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = "mi-fi.xcdatamodel"; sourceTree = "<group>"; };
 		6A686FF120B89A200046CC12 /* PlazaPublica.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlazaPublica.swift; sourceTree = "<group>"; };
 		6A686FF320B9E43A0046CC12 /* MoreViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoreViewController.swift; sourceTree = "<group>"; };
 		6A686FF520B9E5130046CC12 /* QueryService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QueryService.swift; sourceTree = "<group>"; };
@@ -98,6 +100,7 @@
 				6A19C54D20B4E405003D6515 /* GUI */,
 				6A19C54220B4E02E003D6515 /* Assets.xcassets */,
 				6A19C54720B4E02E003D6515 /* Info.plist */,
+				6A3A130620E41F50009C0B5C /* mi-fi.xcdatamodeld */,
 			);
 			path = "mi-fi";
 			sourceTree = "<group>";
@@ -271,6 +274,7 @@
 				6A686FF220B89A200046CC12 /* PlazaPublica.swift in Sources */,
 				6A25730620DB402600CD397F /* PlazaPublicaDetail.swift in Sources */,
 				6A68700020BB73590046CC12 /* FavoriteTableViewCell.swift in Sources */,
+				6A3A130820E41F50009C0B5C /* mi-fi.xcdatamodeld in Sources */,
 				6A25730820DB4FA600CD397F /* PlazaTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -477,6 +481,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		6A3A130620E41F50009C0B5C /* mi-fi.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				6A3A130720E41F50009C0B5C /* mi-fi.xcdatamodel */,
+			);
+			currentVersion = 6A3A130720E41F50009C0B5C /* mi-fi.xcdatamodel */;
+			path = "mi-fi.xcdatamodeld";
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 6A19C53020B4E02C003D6515 /* Project object */;
 }
