@@ -170,12 +170,12 @@ extension PlazaPublica {
             properties__municipi_1: "String"
         ));
         array.append(PlazaPublica(
-            plazaid: 0,
+            plazaid: 1,
             name: "Name",
             municipality: "Municipality",
             coordinateLat: 0.0,
             coordinateLong: 0.0,
-            id: 0,
+            id: 1,
             properties__objectid: 0,
             properties__wifi: "String",
             properties__cnty: 0,
@@ -184,9 +184,9 @@ extension PlazaPublica {
             properties__easting_address: "String",
             properties__easting_state: "String",
             properties__easting_city: "String",
-            properties_nombre: "String",
+            properties_nombre: "Plaza de Recreo",
             properties__id: 0,
-            properties__municipio: "String",
+            properties__municipio: "Adjuntas",
             properties__northing_state: "String",
             properties__northing_zip: "String",
             properties__northing: ["coordinates":["0.0","0.0"]], //point
@@ -195,7 +195,7 @@ extension PlazaPublica {
             properties__coordinates001_zip: "String",
             properties__coordinates001_address: "String",
             properties__coordinates001_state: "String",
-            geometry__coordinates001: ["coordinates":["0.0","0.0"]], //point
+            geometry__coordinates001: ["coordinates":["18.16237142281046","-66.72323681058734"]], //point
             geometry__coordinates001_city: "String",
             geometry__coordinates002_address: "String",
             geometry__coordinates002_state: "String",
@@ -205,12 +205,12 @@ extension PlazaPublica {
             properties__municipi_1: "String"
         ));
         array.append(PlazaPublica(
-            plazaid: 0,
+            plazaid: 2,
             name: "Name",
             municipality: "Municipality",
             coordinateLat: 0.0,
             coordinateLong: 0.0,
-            id: 0,
+            id: 2,
             properties__objectid: 0,
             properties__wifi: "String",
             properties__cnty: 0,
@@ -219,9 +219,9 @@ extension PlazaPublica {
             properties__easting_address: "String",
             properties__easting_state: "String",
             properties__easting_city: "String",
-            properties_nombre: "String",
+            properties_nombre: "Plaza de Recreo",
             properties__id: 0,
-            properties__municipio: "String",
+            properties__municipio: "Aguada",
             properties__northing_state: "String",
             properties__northing_zip: "String",
             properties__northing: ["coordinates":["0.0","0.0"]], //point
@@ -230,7 +230,7 @@ extension PlazaPublica {
             properties__coordinates001_zip: "String",
             properties__coordinates001_address: "String",
             properties__coordinates001_state: "String",
-            geometry__coordinates001: ["coordinates":["0.0","0.0"]], //point
+            geometry__coordinates001: ["coordinates":["18.37964455585452","-67.1886038317915"]], //point
             geometry__coordinates001_city: "String",
             geometry__coordinates002_address: "String",
             geometry__coordinates002_state: "String",
@@ -240,12 +240,12 @@ extension PlazaPublica {
             properties__municipi_1: "String"
         ));
         array.append(PlazaPublica(
-            plazaid: 0,
+            plazaid: 3,
             name: "Name",
             municipality: "Municipality",
             coordinateLat: 0.0,
             coordinateLong: 0.0,
-            id: 0,
+            id: 3,
             properties__objectid: 0,
             properties__wifi: "String",
             properties__cnty: 0,
@@ -254,9 +254,9 @@ extension PlazaPublica {
             properties__easting_address: "String",
             properties__easting_state: "String",
             properties__easting_city: "String",
-            properties_nombre: "String",
+            properties_nombre: "Plaza Placido Acevedo",
             properties__id: 0,
-            properties__municipio: "String",
+            properties__municipio: "Aguadilla",
             properties__northing_state: "String",
             properties__northing_zip: "String",
             properties__northing: ["coordinates":["0.0","0.0"]], //point
@@ -265,7 +265,7 @@ extension PlazaPublica {
             properties__coordinates001_zip: "String",
             properties__coordinates001_address: "String",
             properties__coordinates001_state: "String",
-            geometry__coordinates001: ["coordinates":["0.0","0.0"]], //point
+            geometry__coordinates001: ["coordinates":["18.41810717455046","-67.1553553989534"]], //point
             geometry__coordinates001_city: "String",
             geometry__coordinates002_address: "String",
             geometry__coordinates002_state: "String",
@@ -275,12 +275,12 @@ extension PlazaPublica {
             properties__municipi_1: "String"
         ));
         array.append(PlazaPublica(
-            plazaid: 0,
+            plazaid: 4,
             name: "Name",
             municipality: "Municipality",
             coordinateLat: 0.0,
             coordinateLong: 0.0,
-            id: 0,
+            id: 4,
             properties__objectid: 0,
             properties__wifi: "String",
             properties__cnty: 0,
@@ -289,9 +289,9 @@ extension PlazaPublica {
             properties__easting_address: "String",
             properties__easting_state: "String",
             properties__easting_city: "String",
-            properties_nombre: "String",
+            properties_nombre: "Plaza de Recreo",
             properties__id: 0,
-            properties__municipio: "String",
+            properties__municipio: "Aguadilla",
             properties__northing_state: "String",
             properties__northing_zip: "String",
             properties__northing: ["coordinates":["0.0","0.0"]], //point
@@ -300,7 +300,7 @@ extension PlazaPublica {
             properties__coordinates001_zip: "String",
             properties__coordinates001_address: "String",
             properties__coordinates001_state: "String",
-            geometry__coordinates001: ["coordinates":["0.0","0.0"]], //point
+            geometry__coordinates001: ["coordinates":["18.42943206029809","-67.15446728846649"]], //point
             geometry__coordinates001_city: "String",
             geometry__coordinates002_address: "String",
             geometry__coordinates002_state: "String",
@@ -310,12 +310,12 @@ extension PlazaPublica {
             properties__municipi_1: "String"
         ));
         array.append(PlazaPublica(
-            plazaid: 0,
+            plazaid: 5,
             name: "Name",
             municipality: "Municipality",
             coordinateLat: 0.0,
             coordinateLong: 0.0,
-            id: 0,
+            id: 5,
             properties__objectid: 0,
             properties__wifi: "String",
             properties__cnty: 0,
@@ -324,9 +324,9 @@ extension PlazaPublica {
             properties__easting_address: "String",
             properties__easting_state: "String",
             properties__easting_city: "String",
-            properties_nombre: "String",
+            properties_nombre: "Plaza de Recreo",
             properties__id: 0,
-            properties__municipio: "String",
+            properties__municipio: "Aibonito",
             properties__northing_state: "String",
             properties__northing_zip: "String",
             properties__northing: ["coordinates":["0.0","0.0"]], //point
@@ -335,7 +335,7 @@ extension PlazaPublica {
             properties__coordinates001_zip: "String",
             properties__coordinates001_address: "String",
             properties__coordinates001_state: "String",
-            geometry__coordinates001: ["coordinates":["0.0","0.0"]], //point
+            geometry__coordinates001: ["coordinates":["18.13940071343232","-66.26635064133625"]], //point
             geometry__coordinates001_city: "String",
             geometry__coordinates002_address: "String",
             geometry__coordinates002_state: "String",
@@ -345,12 +345,12 @@ extension PlazaPublica {
             properties__municipi_1: "String"
         ));
         array.append(PlazaPublica(
-            plazaid: 0,
+            plazaid: 6,
             name: "Name",
             municipality: "Municipality",
             coordinateLat: 0.0,
             coordinateLong: 0.0,
-            id: 0,
+            id: 6,
             properties__objectid: 0,
             properties__wifi: "String",
             properties__cnty: 0,
@@ -359,9 +359,9 @@ extension PlazaPublica {
             properties__easting_address: "String",
             properties__easting_state: "String",
             properties__easting_city: "String",
-            properties_nombre: "String",
+            properties_nombre: "Plaza de Recreo",
             properties__id: 0,
-            properties__municipio: "String",
+            properties__municipio: "Anasco",
             properties__northing_state: "String",
             properties__northing_zip: "String",
             properties__northing: ["coordinates":["0.0","0.0"]], //point
@@ -370,7 +370,7 @@ extension PlazaPublica {
             properties__coordinates001_zip: "String",
             properties__coordinates001_address: "String",
             properties__coordinates001_state: "String",
-            geometry__coordinates001: ["coordinates":["0.0","0.0"]], //point
+            geometry__coordinates001: ["coordinates":["18.28269281457546","-67.14004808440212"]], //point
             geometry__coordinates001_city: "String",
             geometry__coordinates002_address: "String",
             geometry__coordinates002_state: "String",
@@ -380,12 +380,12 @@ extension PlazaPublica {
             properties__municipi_1: "String"
         ));
         array.append(PlazaPublica(
-            plazaid: 0,
+            plazaid: 7,
             name: "Name",
             municipality: "Municipality",
             coordinateLat: 0.0,
             coordinateLong: 0.0,
-            id: 0,
+            id: 7,
             properties__objectid: 0,
             properties__wifi: "String",
             properties__cnty: 0,
@@ -394,9 +394,9 @@ extension PlazaPublica {
             properties__easting_address: "String",
             properties__easting_state: "String",
             properties__easting_city: "String",
-            properties_nombre: "String",
+            properties_nombre: "Plaza de Recreo",
             properties__id: 0,
-            properties__municipio: "String",
+            properties__municipio: "Anasco",
             properties__northing_state: "String",
             properties__northing_zip: "String",
             properties__northing: ["coordinates":["0.0","0.0"]], //point
@@ -405,7 +405,7 @@ extension PlazaPublica {
             properties__coordinates001_zip: "String",
             properties__coordinates001_address: "String",
             properties__coordinates001_state: "String",
-            geometry__coordinates001: ["coordinates":["0.0","0.0"]], //point
+            geometry__coordinates001: ["coordinates":["18.28213015369648","-67.14022556346742"]], //point
             geometry__coordinates001_city: "String",
             geometry__coordinates002_address: "String",
             geometry__coordinates002_state: "String",
@@ -415,12 +415,12 @@ extension PlazaPublica {
             properties__municipi_1: "String"
         ));
         array.append(PlazaPublica(
-            plazaid: 0,
+            plazaid: 8,
             name: "Name",
             municipality: "Municipality",
             coordinateLat: 0.0,
             coordinateLong: 0.0,
-            id: 0,
+            id: 8,
             properties__objectid: 0,
             properties__wifi: "String",
             properties__cnty: 0,
@@ -429,9 +429,9 @@ extension PlazaPublica {
             properties__easting_address: "String",
             properties__easting_state: "String",
             properties__easting_city: "String",
-            properties_nombre: "String",
+            properties_nombre: "Parque Julio Rodriguez Olmo",
             properties__id: 0,
-            properties__municipio: "String",
+            properties__municipio: "Arecibo",
             properties__northing_state: "String",
             properties__northing_zip: "String",
             properties__northing: ["coordinates":["0.0","0.0"]], //point
@@ -440,7 +440,7 @@ extension PlazaPublica {
             properties__coordinates001_zip: "String",
             properties__coordinates001_address: "String",
             properties__coordinates001_state: "String",
-            geometry__coordinates001: ["coordinates":["0.0","0.0"]], //point
+            geometry__coordinates001: ["coordinates":["18.47393037705134","-66.72901860556037"]], //point
             geometry__coordinates001_city: "String",
             geometry__coordinates002_address: "String",
             geometry__coordinates002_state: "String",
@@ -450,12 +450,12 @@ extension PlazaPublica {
             properties__municipi_1: "String"
         ));
         array.append(PlazaPublica(
-            plazaid: 0,
+            plazaid: 9,
             name: "Name",
             municipality: "Municipality",
             coordinateLat: 0.0,
             coordinateLong: 0.0,
-            id: 0,
+            id: 9,
             properties__objectid: 0,
             properties__wifi: "String",
             properties__cnty: 0,
@@ -464,9 +464,9 @@ extension PlazaPublica {
             properties__easting_address: "String",
             properties__easting_state: "String",
             properties__easting_city: "String",
-            properties_nombre: "String",
+            properties_nombre: "Plaza de Recreo",
             properties__id: 0,
-            properties__municipio: "String",
+            properties__municipio: "Arecibo",
             properties__northing_state: "String",
             properties__northing_zip: "String",
             properties__northing: ["coordinates":["0.0","0.0"]], //point
@@ -475,7 +475,7 @@ extension PlazaPublica {
             properties__coordinates001_zip: "String",
             properties__coordinates001_address: "String",
             properties__coordinates001_state: "String",
-            geometry__coordinates001: ["coordinates":["0.0","0.0"]], //point
+            geometry__coordinates001: ["coordinates":["18.47205412777932","-66.71599822514358"]], //point
             geometry__coordinates001_city: "String",
             geometry__coordinates002_address: "String",
             geometry__coordinates002_state: "String",

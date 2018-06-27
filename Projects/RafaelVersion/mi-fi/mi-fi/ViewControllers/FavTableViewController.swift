@@ -17,7 +17,7 @@ class FavTableViewController: UITableViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        self.tableView.reloadData()
         //CoreData
         let context = appDelegateFav.persistentContainer.viewContext
         
